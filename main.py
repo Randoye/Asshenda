@@ -4,7 +4,6 @@ import meta
 from db import fetch_last_ip, condb, initdb
 # PIP Import
 import os
-pwd = os.getcwd()
 last_ip_con = None
 
 
