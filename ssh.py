@@ -1,6 +1,5 @@
 from meta import cls, ask_yes_no
 from db import condb, info_ssh_by_id
-from main import pwd
 from subprocess import call
 
 
@@ -55,4 +54,4 @@ def sshcon():
     ip = ssh_info[1]
     user = ssh_info[2]
     cls()
-    call(["ssh", "-i", f"{pwd}/cert/Trousseau.pem", f"{user}@{ip}"])
+    call(["ssh", f"{user}@{ip}"])
